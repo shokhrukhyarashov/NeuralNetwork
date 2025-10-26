@@ -85,7 +85,7 @@ public class NeuralNetwork
         double[,] result = new double[rows, cols];
         for (int row = 0; row < rows; row++)
         {
-            for (int col = 0; col < col; col++)
+            for (int col = 0; col < cols; col++)
             {
                 switch (operation)
                 {
@@ -128,7 +128,7 @@ public class NeuralNetwork
         double[,] output = neuralNetwork.Think(new double[,]
         {
             {0,1,0},
-            {0,0,1},
+            {0,0,0},
             {0,0,1}
         });
 
